@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>BodyJam Draw</title>
+</head>
+
+<body>
+  <h1>今天要上哪一套呢？</h1>
+  <div id="draw-button-box">
+    <button id="draw-button">GO</button>
+  </div>
+  <form id="person-selector">
+    <div>
+      <input type="radio" name="person" value="sandy" id="sandy">
+      <label for="sandy" class="name">Sandy</label>
+    </div>
+    <div>
+      <input type="radio" name="person" value="momo" id="momo">
+      <label class="name" for="momo">默默</label>
+    </div>
+  </form>
+  <div id="container">
+    <div id="data-panel">
+      <div class="data-box">
+        <div class="interval-title-box">
+          <p class="interval-title">Warm Up</p>
+        </div>
+        <div class="interval-number-box">
+          <p class="item-number interval-number" id="warm-up-number">--</p>
+          <div class="function">
+            <button class="function-button lock-button" id="warm-up-lock">
+              <div>鎖定</div>
+              <i class="fa-solid fa-lock"></i>
+            </button>
+            <button class="function-button redraw-button" id="warm-up-redraw">
+              <div>重抽</div>
+              <i class="fa-solid fa-rotate-right"></i>
+            </button>
+            <button class="function-button custom-button" id="warm-up-renumber">
+              <div>自訂</div>
+              <i class="fa-sharp fa-solid fa-pen"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="data-box">
+        <div class="cardio-title-box">
+          <p class="cardio-title">Cardio 1</p>
+        </div>
+        <div class="cardio-number-box">
+          <p class="item-number cardio-number" id="cardio-1-number">--</p>
+          <div class="function">
+            <button class="function-button lock-button" id="cardio-1-lock">
+              <div>鎖定</div>
+              <i class="fa-solid fa-lock"></i>
+            </button>
+            <button class="function-button redraw-button" id="cardio-1-redraw">
+              <div>重抽</div>
+              <i class="fa-solid fa-rotate-right"></i>
+            </button>
+            <button class="function-button custom-button" id="cardio-1-renumber">
+              <div>自訂</div>
+              <i class="fa-sharp fa-solid fa-pen"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="data-box">
+        <div class="interval-title-box">
+          <p class="interval-title">Recovery</p>
+        </div>
+        <div class="interval-number-box">
+          <p class="item-number interval-number" id="recovery-number">--</p>
+          <div class="function">
+            <button class="function-button lock-button" id="recovery-lock">
+              <div>鎖定</div>
+              <i class="fa-solid fa-lock"></i>
+            </button>
+            <button class="function-button redraw-button" id="recovery-redraw">
+              <div>重抽</div>
+              <i class="fa-solid fa-rotate-right"></i>
+            </button>
+            <button class="function-button custom-button" id="recovery-renumber">
+              <div>自訂</div>
+              <i class="fa-sharp fa-solid fa-pen"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="data-box">
+        <div class="cardio-title-box">
+          <p class="cardio-title">Cardio 2</p>
+        </div>
+        <div class="cardio-number-box">
+          <p class="item-number cardio-number" id="cardio-2-number">--</p>
+          <div class="function">
+            <button class="function-button lock-button" id="cardio-2-lock">
+              <div>鎖定</div>
+              <i class="fa-solid fa-lock"></i>
+            </button>
+            <button class="function-button redraw-button" id="cardio-2-redraw">
+              <div>重抽</div>
+              <i class="fa-solid fa-rotate-right"></i>
+            </button>
+            <button class="function-button custom-button" id="cardio-2-renumber">
+              <div>自訂</div>
+              <i class="fa-sharp fa-solid fa-pen"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="data-box">
+        <div class="interval-title-box">
+          <p class="interval-title">Groove-<br>Down</p>
+        </div>
+        <div class="interval-number-box">
+          <p class="item-number interval-number" id="groovedown-number">--</p>
+          <div class="function">
+            <button class="function-button lock-button" id="groovedown-lock">
+              <div>鎖定</div>
+              <i class="fa-solid fa-lock"></i>
+            </button>
+            <button class="function-button redraw-button" id="groovedown-redraw">
+              <div>重抽</div>
+              <i class="fa-solid fa-rotate-right"></i>
+            </button>
+            <button class="function-button custom-button" id="recovery-renumber">
+              <div>自訂</div>
+              <i class="fa-sharp fa-solid fa-pen"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="confirm-button-box">
+    <button id="confirm-button">OK</button>
+  </div>
+  <div id="result-panel-box">
+    <div id="result-panel">
+      決定了就按下OK吧！
+    </div>
+    <div>
+      <button id="copy-button" class="hidden">點我複製結果！</button>
+    </div>
+  </div>
+
+  <script src="./main.js"></script>
+  <script src="https://kit.fontawesome.com/fd45362cee.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

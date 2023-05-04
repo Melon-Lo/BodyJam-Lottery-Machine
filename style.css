@@ -1,0 +1,242 @@
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+#draw-button-box {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+
+#draw-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgb(255, 200, 200);
+  font-size: 40px;
+  font-weight: 1000;
+}
+
+#person-selector {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+}
+
+#data-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 70%;
+  border: 3px solid rgb(81, 81, 81);
+  border-radius: 10px;
+}
+
+.data-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: 5px;
+}
+
+.cardio-title-box {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 40%;
+  margin: 3px 0 0;
+  padding: 3px;
+  font-size: 30px;
+
+  background-color: rgb(218, 218, 255);
+  border-radius: 5px;
+}
+
+.cardio-title {
+  padding: 5px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.cardio-number-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  margin: 5px;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.cardio-number {
+  padding: 5px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.interval-title-box {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 40%;
+  margin: 3px 0 0;
+  padding: 5px;
+  font-size: 30px;
+  background-color: rgb(209, 255, 184);
+  border-radius: 5px;
+}
+
+.interval-title {
+  padding: 5px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.interval-number-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  margin: 5px;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.interval-number {
+  padding: 5px;
+  font-size: 30px;
+}
+
+.function {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.lock-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1px;
+  width: 70px;
+  border-radius: 10px;
+  background-color: rgb(122, 9, 9);
+  font-size: 15px;
+  color: aliceblue;
+}
+
+.redraw-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1px;
+  width: 70px;
+  border-radius: 10px;
+  background-color: rgb(3, 27, 69);
+  font-size: 15px;
+  color: aliceblue;
+}
+
+.custom-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1px;
+  width: 70px;
+  border-radius: 10px;
+  background-color: rgb(73, 55, 1);
+  font-size: 15px;
+  color: aliceblue;
+}
+
+.locked {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  font-size: 30px;
+  color: rgb(244, 20, 20);
+  text-align: center;
+}
+
+.locked-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1px;
+  width: 70px;
+  border-radius: 10px;
+  background-color: rgb(9, 55, 2);
+  font-size: 15px;
+  color: aliceblue;
+}
+
+#confirm-button-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#confirm-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0 0 0;
+  width: 100px;
+  border-radius: 10%;
+  background-color: rgb(62, 255, 75);
+  font-size: 40px;
+}
+
+#result-panel-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#result-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  width: 70%;
+  height: 70%;
+  background-color: rgb(255, 234, 208);
+  border: 3px solid rgb(176, 109, 28);
+  border-radius: 10px;
+  line-height: 40px;
+  font-size: 25px;
+}
+
+#copy-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  border-radius: 10px;
+  background-color: rgb(198, 255, 255);
+  font-size: 20px;
+}
+
+.hidden {
+  visibility: hidden;
+}
