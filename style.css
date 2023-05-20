@@ -1,242 +1,342 @@
-h1 {
-  display: flex;
-  justify-content: center;
-  font-size: 30px;
+/********** import font **********/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Noto+Serif+TC:wght@300&family=Teko:wght@500&display=swap');
+
+/********** basic settings **********/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-#draw-button-box {
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: "Teko", 'Lato', sans-serif;
+}
+
+/********** layout **********/
+
+/* header */
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 4rem;
+  z-index: 999;
+}
+
+.background-img {
+  position: absolute;
+  width: 100%;
+  height: 4rem;
+  object-fit: cover;
+  object-position: 0 -30px;
+  opacity: 0.8;
+}
+
+.title-logo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  position: relative;
+  display: block;
+  height: 4rem;
+  padding: 0.5rem;
+}
+
+.title {
+  flex: 1;
+  position: relative;
   display: flex;
   justify-content: center;
-  margin: 5px;
+  align-items: center;
+
+  margin: 0;
+  height: 60px;
+
+  font-size: 2rem;
+  color: white;
 }
+
+/* main */
+
+.container {
+  position: relative;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Main Title */
+
+.main-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-title-text {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+/* Person Selector */
+
+.person-selector {
+  display: flex;
+  width: 60%;
+  margin: 1rem 0;
+  border: 2px solid black;
+  border-radius: 12px;
+}
+
+div input, div label{
+  cursor: pointer;
+}
+
+.selector-title {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  margin: 0 auto;
+
+  background-color: black;
+  border-radius: 10px 0 0 10px;
+
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.selector-teachers {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 0 10px 10px 0;
+
+  background-color: rgb(255, 255, 255);
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Draw Button */
 
 #draw-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px;
-  width: 100px;
-  height: 100px;
+
+  margin: 1rem 0;
+  width: 6rem;
+  height: 6rem;
+  
+  border: 3px solid black;
   border-radius: 50%;
-  background-color: rgb(255, 200, 200);
-  font-size: 40px;
+  background:linear-gradient(to bottom, rgb(241, 211, 38), rgb(252, 20, 20));
+  color: azure;
+
+  -webkit-text-stroke: 3px black;
+  font-size: 3rem;
   font-weight: 1000;
+  cursor: pointer;
 }
 
-#person-selector {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 10px;
-  font-size: 25px;
-  font-weight: 800;
+#draw-button:active {
+  font-size: 2.5rem;
 }
 
-#container {
-  display: flex;
-  justify-content: center;
-}
+/* Data Panel */
 
-#data-panel {
+.data-panel {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 70%;
-  height: 70%;
-  border: 3px solid rgb(81, 81, 81);
-  border-radius: 10px;
+  width: 80%;
+
+  border-radius: 1rem;
+  background-color: antiquewhite;
+
+  padding: 1rem;
+  margin: 1rem 0;
 }
 
 .data-box {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70%;
-  margin: 5px;
+  margin: 1rem 0;
 }
 
-.cardio-title-box {
-  display: flex;
-  justify-content: center;
-  height: 100%;
-  width: 40%;
-  margin: 3px 0 0;
-  padding: 3px;
-  font-size: 30px;
-
-  background-color: rgb(218, 218, 255);
-  border-radius: 5px;
-}
-
-.cardio-title {
-  padding: 5px;
-  font-size: 30px;
-  text-align: center;
-}
-
-.cardio-number-box {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 40%;
-  margin: 5px;
-  padding: 5px;
-  font-size: 20px;
-}
-
-.cardio-number {
-  padding: 5px;
-  font-size: 30px;
-  text-align: center;
-}
-
-.interval-title-box {
-  display: flex;
-  justify-content: center;
-  height: 100%;
-  width: 40%;
-  margin: 3px 0 0;
-  padding: 5px;
-  font-size: 30px;
-  background-color: rgb(209, 255, 184);
-  border-radius: 5px;
-}
-
-.interval-title {
-  padding: 5px;
-  font-size: 30px;
-  text-align: center;
-}
-
-.interval-number-box {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 40%;
-  margin: 5px;
-  padding: 5px;
-  font-size: 20px;
-}
-
-.interval-number {
-  padding: 5px;
-  font-size: 30px;
-}
-
-.function {
+.data-title,
+.data-number {
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  font-size: 1.5rem;
 }
 
-.lock-button {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 1px;
-  width: 70px;
+.data-title-0 {
+  background-color: #edff84;
   border-radius: 10px;
-  background-color: rgb(122, 9, 9);
-  font-size: 15px;
-  color: aliceblue;
 }
 
-.redraw-button {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 1px;
-  width: 70px;
+.data-title-1 {
+  background-color: #61e9f9;
   border-radius: 10px;
-  background-color: rgb(3, 27, 69);
-  font-size: 15px;
-  color: aliceblue;
 }
 
-.custom-button {
+.data-number {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 1px;
-  width: 70px;
-  border-radius: 10px;
-  background-color: rgb(73, 55, 1);
-  font-size: 15px;
-  color: aliceblue;
+  flex-direction: row;
+  font-size: 2rem;
+}
+
+.lock-icon {
+  font-size: 1rem;
+  margin-left: 0.5rem;
 }
 
 .locked {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px;
-  font-size: 30px;
-  color: rgb(244, 20, 20);
-  text-align: center;
+  color: red;
 }
 
-.locked-button {
+/* Function Buttons */
+
+.data-function-buttons {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.function-button {
+  margin: 0.2rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   margin: 1px;
   width: 70px;
   border-radius: 10px;
-  background-color: rgb(9, 55, 2);
-  font-size: 15px;
-  color: aliceblue;
+
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  white-space: nowrap;
+  cursor: pointer;
 }
 
-#confirm-button-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.function-button-lock {
+  background:linear-gradient(to right, rgb(69, 4, 4), rgb(237, 103, 103));
 }
+
+.function-button-redraw {
+  background:linear-gradient(to right, rgb(2, 3, 48), rgb(137, 215, 237));
+}
+
+.function-button-custom {
+  background:linear-gradient(to right, rgb(57, 50, 2), rgb(255, 240, 106));
+}
+
+.locked-button {
+  background:linear-gradient(to right, rgb(2, 45, 1), rgb(122, 224, 116));
+}
+
+/* Confirm Button */
 
 #confirm-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 30px 0 0 0;
-  width: 100px;
+  margin: 1rem 0;
+
+  height: 4rem;
+  width: 6rem;
+
+  border: 3px solid black;
   border-radius: 10%;
-  background-color: rgb(62, 255, 75);
-  font-size: 40px;
+  background:linear-gradient(to bottom, rgb(182, 255, 182), rgb(9, 90, 21));
+
+  font-size: 3rem;
+  -webkit-text-stroke: 0.2rem black;
+  color: white;
+  font-weight: 1000;
+  cursor: pointer;
 }
+
+#confirm-button:active {
+  font-size: 2.5rem;
+}
+
+/* Result */
 
 #result-panel-box {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  width: 100%;
 }
 
 #result-panel {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin-top: 30px;
-  width: 70%;
-  height: 70%;
-  background-color: rgb(255, 234, 208);
-  border: 3px solid rgb(176, 109, 28);
+
+  width: 50%;
+  margin: 2rem 0;
+
+  background-color: rgb(244, 236, 255);
   border-radius: 10px;
+
   line-height: 40px;
   font-size: 25px;
 }
 
-#copy-button {
+/* Copy Button */
+
+.copy-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
-  border-radius: 10px;
-  background-color: rgb(198, 255, 255);
-  font-size: 20px;
+  margin: 1rem 0;
+
+  height: 4rem;
+  width: 12rem;
+
+  border: 3px solid black;
+  border-radius: 0.5rem;
+  background:linear-gradient(to bottom, rgb(157, 255, 253), rgb(21, 95, 185));
+
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+  font-weight: 1000;
+  cursor: pointer;
 }
 
 .hidden {
-  visibility: hidden;
+  display: none;
 }

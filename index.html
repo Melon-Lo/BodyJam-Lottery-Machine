@@ -10,146 +10,62 @@
 </head>
 
 <body>
-  <h1>今天要上哪一套呢？</h1>
-  <div id="draw-button-box">
-    <button id="draw-button">GO</button>
-  </div>
-  <form id="person-selector">
-    <div>
-      <input type="radio" name="person" value="sandy" id="sandy">
-      <label for="sandy" class="name">Sandy</label>
+  <!-- header -->
+  <header>
+    <img class="background-img"
+      src="https://lmimirroralphapvr.azureedge.net/static/media/1961/d31c55da-8da7-4c26-9e81-a38dc1003343/bodyjam-01-173-program-video-1440x600.jpg"
+      alt="">
+    <div class="title-logo">
+      <img src="https://www.asportfit.com/wp-content/uploads/class-list-x600-06-BODYJAM-01.png" alt="bodyjam-logo"
+        class="logo">
+      <p class="title">Lottery Machine</p>
     </div>
-    <div>
-      <input type="radio" name="person" value="momo" id="momo">
-      <label class="name" for="momo">默默</label>
-    </div>
-  </form>
-  <div id="container">
-    <div id="data-panel">
-      <div class="data-box">
-        <div class="interval-title-box">
-          <p class="interval-title">Warm Up</p>
-        </div>
-        <div class="interval-number-box">
-          <p class="item-number interval-number" id="warm-up-number">--</p>
-          <div class="function">
-            <button class="function-button lock-button" id="warm-up-lock">
-              <div>鎖定</div>
-              <i class="fa-solid fa-lock"></i>
-            </button>
-            <button class="function-button redraw-button" id="warm-up-redraw">
-              <div>重抽</div>
-              <i class="fa-solid fa-rotate-right"></i>
-            </button>
-            <button class="function-button custom-button" id="warm-up-renumber">
-              <div>自訂</div>
-              <i class="fa-sharp fa-solid fa-pen"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="data-box">
-        <div class="cardio-title-box">
-          <p class="cardio-title">Cardio 1</p>
-        </div>
-        <div class="cardio-number-box">
-          <p class="item-number cardio-number" id="cardio-1-number">--</p>
-          <div class="function">
-            <button class="function-button lock-button" id="cardio-1-lock">
-              <div>鎖定</div>
-              <i class="fa-solid fa-lock"></i>
-            </button>
-            <button class="function-button redraw-button" id="cardio-1-redraw">
-              <div>重抽</div>
-              <i class="fa-solid fa-rotate-right"></i>
-            </button>
-            <button class="function-button custom-button" id="cardio-1-renumber">
-              <div>自訂</div>
-              <i class="fa-sharp fa-solid fa-pen"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="data-box">
-        <div class="interval-title-box">
-          <p class="interval-title">Recovery</p>
-        </div>
-        <div class="interval-number-box">
-          <p class="item-number interval-number" id="recovery-number">--</p>
-          <div class="function">
-            <button class="function-button lock-button" id="recovery-lock">
-              <div>鎖定</div>
-              <i class="fa-solid fa-lock"></i>
-            </button>
-            <button class="function-button redraw-button" id="recovery-redraw">
-              <div>重抽</div>
-              <i class="fa-solid fa-rotate-right"></i>
-            </button>
-            <button class="function-button custom-button" id="recovery-renumber">
-              <div>自訂</div>
-              <i class="fa-sharp fa-solid fa-pen"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="data-box">
-        <div class="cardio-title-box">
-          <p class="cardio-title">Cardio 2</p>
-        </div>
-        <div class="cardio-number-box">
-          <p class="item-number cardio-number" id="cardio-2-number">--</p>
-          <div class="function">
-            <button class="function-button lock-button" id="cardio-2-lock">
-              <div>鎖定</div>
-              <i class="fa-solid fa-lock"></i>
-            </button>
-            <button class="function-button redraw-button" id="cardio-2-redraw">
-              <div>重抽</div>
-              <i class="fa-solid fa-rotate-right"></i>
-            </button>
-            <button class="function-button custom-button" id="cardio-2-renumber">
-              <div>自訂</div>
-              <i class="fa-sharp fa-solid fa-pen"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="data-box">
-        <div class="interval-title-box">
-          <p class="interval-title">Groove-<br>Down</p>
-        </div>
-        <div class="interval-number-box">
-          <p class="item-number interval-number" id="groovedown-number">--</p>
-          <div class="function">
-            <button class="function-button lock-button" id="groovedown-lock">
-              <div>鎖定</div>
-              <i class="fa-solid fa-lock"></i>
-            </button>
-            <button class="function-button redraw-button" id="groovedown-redraw">
-              <div>重抽</div>
-              <i class="fa-solid fa-rotate-right"></i>
-            </button>
-            <button class="function-button custom-button" id="recovery-renumber">
-              <div>自訂</div>
-              <i class="fa-sharp fa-solid fa-pen"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="confirm-button-box">
-    <button id="confirm-button">OK</button>
-  </div>
-  <div id="result-panel-box">
-    <div id="result-panel">
-      決定了就按下OK吧！
-    </div>
-    <div>
-      <button id="copy-button" class="hidden">點我複製結果！</button>
-    </div>
-  </div>
+  </header>
+  <main>
+    <div class="container">
 
+      <!-- Main Title -->
+      <div class="main-title">
+        <h1 class="main-title-text">今天要上哪一套呢？</h1>
+      </div>
+
+      <!-- Person Selector -->
+      <div class="person-selector">
+        <p class="selector-title">請選擇老師</p>
+        <form id="person-selector" class="selector-teachers">
+          <div>
+            <input type="radio" name="person" value="sandy" id="sandy">
+            <label for="sandy" class="name">Sandy</label>
+          </div>
+          <div>
+            <input type="radio" name="person" value="momo" id="momo">
+            <label class="name" for="momo">默默</label>
+          </div>
+        </form>
+      </div>
+
+      <!-- Draw Button -->
+      <button id="draw-button">GO</button>
+
+      <!-- Data Panel -->
+      <div class="data-panel">
+        <div class="data-box">
+          <!--   render data here   -->
+        </div>
+      </div>
+
+      <!-- Confirm Button -->
+      <button id="confirm-button">OK</button>
+
+      <!-- Result -->
+      <div id="result-panel-box">
+        <div id="result-panel">
+          <!-- render result here -->
+        </div>
+        <button class="copy-button hidden">點我複製結果！</button>
+      </div>
+    </div>
+  </main>
   <script src="./main.js"></script>
   <script src="https://kit.fontawesome.com/fd45362cee.js" crossorigin="anonymous"></script>
 </body>
