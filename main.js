@@ -25,7 +25,7 @@ function renderDataPanel() {
       <div class="data-box">
         <p class="data-title data-title-${i % 2}">${BODYJAM_PROCESS[i]}</p>
         <div class="data-number">
-          <p>--</p>
+        --
         </div>
         <div class="data-function-buttons">
           <button class="function-button function-button-lock">鎖定<i class="fa-solid fa-lock"></i></button>
@@ -120,7 +120,7 @@ for (const lockButton of lockButtons) {
       const numberBox = parentBox.parentElement.parentElement.children[1]
       const number = numberBox.textContent
 
-      if (number === '--') {
+      if (number.length > 10) {
         return alert('請先抽籤哦！')
       }
 
