@@ -324,14 +324,14 @@ div input, div label{
   align-items: center;
   margin: 1rem 0;
 
-  height: 4rem;
-  width: 12rem;
+  height: 3rem;
+  width: 10rem;
 
   border: 3px solid black;
   border-radius: 0.5rem;
   background:linear-gradient(to bottom, rgb(157, 255, 253), rgb(21, 95, 185));
 
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: rgb(0, 0, 0);
   font-weight: 1000;
   cursor: pointer;

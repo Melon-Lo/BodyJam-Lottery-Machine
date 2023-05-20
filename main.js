@@ -227,8 +227,8 @@ confirmButton.addEventListener('click', function onConfirmButtonClicked() {
   }
 
   let rawHTML = ''
-  rawHTML += `<p class="results">
-  ${content}</p>
+  rawHTML += `<span class="results">
+  ${content}</span>
   Enjoy! ^_^
   `
   resultPanel.innerHTML = rawHTML
